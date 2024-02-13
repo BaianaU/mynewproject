@@ -1,4 +1,3 @@
-// GameComponent.js
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -77,8 +76,11 @@ const styles = StyleSheet.create({
   },
   choiceButton: {
     backgroundColor: '#3498db',
-    padding: 10,
-    borderRadius: 5,
+    padding: 20,
+    marginHorizontal: 10,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   choiceText: {
     color: '#fff',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import GameComponent from './componets/GameComponent';
+import GameComponent from "./components/GameComponent";
 
 const App = () => {
   return (
