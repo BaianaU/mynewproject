@@ -2,6 +2,11 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import GameComponent from "./components/GameComponent";
 
+/**
+ * Huvudkomponenten för applikationen.
+ * @returns {JSX.Element} JSX-element för hela applikationen.
+ */
+
 const App = () => {
   return (
     <View style={styles.container}>
@@ -9,6 +14,10 @@ const App = () => {
     </View>
   );
 };
+
+/**
+ * Stilmall för komponenten.
+ */
 
 const styles = StyleSheet.create({
   container: {
@@ -20,3 +29,6 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
+

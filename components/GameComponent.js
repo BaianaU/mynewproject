@@ -1,25 +1,43 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
+/**
+ * Komponent för huvudlogiken och presentationen av sten, sax, påse-spelet.
+ * @returns {JSX.Element} JSX-element för sten, sax, påse-komponenten.
+ */
+
+
 const GameComponent = () => {
+    // State för spelarens val, datorns val och resultatet av spelet.
   const [playerChoice, setPlayerChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
   const [result, setResult] = useState(null);
 
+  // Möjliga val i spelet.
   const choices = ['Sten', 'Sax', 'Påse'];
+
+  /**
+   * Generera ett slumpmässigt val från möjliga val.
+   * @returns {string} Slumpmässigt val.
+   */
 
   const getRandomChoice = () => {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
   };
 
+  /**
+   * Hantera spelarens val och avgöra resultatet av spelet.
+   * @param {string} selectedChoice - Spelarens val.
+   * @returns {void}
+   */
   const handleChoice = (selectedChoice) => {
     const computerSelection = getRandomChoice();
 
     setPlayerChoice(selectedChoice);
     setComputerChoice(computerSelection);
 
-    // Determine the winner
+    // Avgör vinnaren
     if (selectedChoice === computerSelection) {
       setResult('Oavgjort!');
     } else if (
@@ -58,6 +76,9 @@ const GameComponent = () => {
   );
 };
 
+/**
+ * Stilmall för GameComponent.
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
