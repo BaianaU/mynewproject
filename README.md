@@ -14,3 +14,13 @@ vinnaren baserat på reglerna för Sten, Sax, Påse.
 - Datorn slumpmässigt väljer sitt alternativ.
 - Visa resultatet av spelet (Oavgjort, Du vinner, eller Datorn vinner).
 
+
+Installation
+
+För att installera och köra spelet på din egen dator, följ dessa steg:
+
+    Klona projektet till din dator med kommandot git clone 
+             <https://github.com/BaianaU/mynewproject.git>.
+    Navigera till projektmappen med cd myNewProject.
+    Installera projektets beroenden med npm install.
+    Starta spelet med npm start.
